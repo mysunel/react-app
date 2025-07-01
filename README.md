@@ -1,12 +1,62 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Movie Finder App
 
-Currently, two official plugins are available:
+Aplicație web creată cu React și Vite, care permite utilizatorilor să caute filme, să vizualizeze detalii și să adauge filme la favorite. Proiectul consumă API-ul public de la The Movie Database (TMDB).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Funcționalități
 
-## Expanding the ESLint configuration
+- Afișarea filmelor populare
+- Căutare filme după titlu
+- Vizualizare detalii film (data lansării, distribuție, descriere)
+- Adăugare și gestionare filme favorite (stocate local)
+- Navigare între pagini cu React Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Tehnologii folosite
+
+- React
+- Vite
+- React Router
+- TMDB API
+- JavaScript (ES6+)
+- localStorage pentru salvarea favoritelor
+
+##  Instalare
+
+1. Clonare repository
+
+    git clone https://github.com/mysunel/react-app.git
+    cd react-app
+
+2. Instalare dependențe
+
+    npm install
+
+3. Adaugă cheia API TMDB
+
+    Modifica `./services/api.js` și adaugă cheia ta de la TMDB:
+
+    API_KEY=cheia_ta_tmdb
+
+4. Rulare aplicație în modul de dezvoltare
+
+    npm run dev
+
+
+## Testare
+
+Aplicația a fost testată folosind:
+
+- Postman – pentru verificarea răspunsurilor API-ului TMDB
+- Testare manuală – toate funcționalitățile au fost testate în browser (favoriting, navigare, căutare etc.)
+
+## Notițe
+
+- Pentru a rula aplicația, ai nevoie de o cheie validă TMDB.
+- Favoritele sunt salvate local, în localStorage, deci nu persistă între browsere/dispozitive.
+- Proiectul poate fi extins cu autentificare, backend propriu sau paginare la rezultate.
+
+
+## Autor
+
+Realizat în cadrul unui stagiu de practică individuală.
+Dezvoltat de: Teliman Mihai – 2025
